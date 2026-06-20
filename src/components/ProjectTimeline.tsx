@@ -8,6 +8,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Sparkles, Calendar, BookOpen, Layers, Milestone, Trophy, ArrowRight, CornerDownRight, Smartphone, Eye, Lightbulb } from 'lucide-react';
 import { audioEngine } from './AudioEngine';
 
+// Securely import local image assets for reliable cross-regional deployment bundling
+import timelineImage1 from '../assets/images/regenerated_image_1781966022640.png';
+import timelineImage2 from '../assets/images/regenerated_image_1781884110396.png';
+import timelineImage3 from '../assets/images/regenerated_image_1781877178618.png';
+
 interface TimelineEvent {
   id: string;
   year: string;
@@ -43,7 +48,7 @@ const timelineData: TimelineEvent[] = [
     techStack: ['AR Core', 'Unity ARFoundation', 'C#', '3D UI Mockups', 'Physical Toys Dev'],
     metric: 'FEATURED CAPSTONE // GRAND REWARD',
     isMarquee: true,
-    image: '/src/assets/images/regenerated_image_1781966022640.png'
+    image: timelineImage1
   },
   {
     id: 'gaochang-2025',
@@ -61,7 +66,7 @@ const timelineData: TimelineEvent[] = [
     ],
     techStack: ['虚幻引擎5 (UE5)', 'Lumen Real-time', '3ds Max / Blender', 'VR Controllers SDK'],
     metric: 'HERITAGE INNOVATION // UE5 WORK',
-    image: '/src/assets/images/regenerated_image_1781884110396.png'
+    image: timelineImage2
   },
   {
     id: 'viking-2024',
@@ -79,7 +84,7 @@ const timelineData: TimelineEvent[] = [
     ],
     techStack: ['UE5 Runtime', 'Volumetric Shaders', 'Substance Painter', 'Niagara Particle System'],
     metric: 'CONCEPT LAB PREMIER // 4K LIGHTING',
-    image: '/src/assets/images/regenerated_image_1781877178618.png'
+    image: timelineImage3
   }
 ];
 

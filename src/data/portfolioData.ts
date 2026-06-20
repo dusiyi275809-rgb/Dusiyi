@@ -1,5 +1,21 @@
 import { ProjectItem, SharingItem, TestimonialItem, PassionItem } from '../types';
 
+// Properly import assets to ensure Vite bundles and hashes them correctly for production
+import arImage1 from '../assets/images/regenerated_image_1781883990100.png';
+import arImage2 from '../assets/images/regenerated_image_1781883994225.png';
+import arImage3 from '../assets/images/regenerated_image_1781884110396.png';
+
+import crossImage1 from '../assets/images/regenerated_image_1781877178618.png';
+import crossImage2 from '../assets/images/regenerated_image_1781877182250.png';
+import crossImage3 from '../assets/images/regenerated_image_1781877327288.png';
+
+import arInteractImage from '../assets/images/regenerated_image_1781966022640.png';
+
+import passionImage1 from '../assets/images/regenerated_image_1781886019594.jpg';
+import passionImage2 from '../assets/images/regenerated_image_1781886023315.jpg';
+import passionImage3 from '../assets/images/regenerated_image_1781886027971.jpg';
+import passionImage4 from '../assets/images/regenerated_image_1781886033377.jpg';
+
 export const iosProjects: ProjectItem[] = [
   {
     id: 'ar-1',
@@ -13,7 +29,7 @@ export const iosProjects: ProjectItem[] = [
       subtitle: 'GAOCHANG VR EXPERIENCE // 01',
       metric: 'UE5 RUNTIME',
       type: 'unreal',
-      imageUrl: '/src/assets/images/regenerated_image_1781883990100.png',
+      imageUrl: arImage1,
       color: 'from-amber-600 to-amber-700'
     }
   },
@@ -29,7 +45,7 @@ export const iosProjects: ProjectItem[] = [
       subtitle: 'OVERCOMING PHYSICAL BOUNDS // 02',
       metric: 'ACCESSIBILITY',
       type: 'unreal',
-      imageUrl: '/src/assets/images/regenerated_image_1781883994225.png',
+      imageUrl: arImage2,
       color: 'from-[#FF9EC6] to-pink-600'
     }
   },
@@ -37,7 +53,7 @@ export const iosProjects: ProjectItem[] = [
     id: 'ar-3',
     title: '时空壁垒打破 // 增强历史代入感与独立全栈研发',
     category: 'INTERACTIVE HISTORY & UE5',
-    description: '增强历史代入感，打破时空壁垒，让体验者直观感受古丝绸之路咽喉重镇的昔日宏伟风貌。从最初的创意草图绘制、基础白模搭建，直至虚幻引擎5（UE5）内部的整个VR交互系统和场景细节完善，皆由我独立开发完成。',
+    description: '增强历史代入感，打破时空壁垒，让体验者直观感受古丝绸之路咽喉重镇的昔日宏伟风貌。从最初的创意草图绘制、基础白模搭建，直至虚幻引擎5（UE5）内部的整个VR交互系统 and 场景细节完善，皆由我独立开发完成。',
     tags: ['独立全栈研发', '草图至建模', 'UE5 VR交互系统'],
     mockType: 'browser',
     mockContent: {
@@ -45,7 +61,7 @@ export const iosProjects: ProjectItem[] = [
       subtitle: '100% INDEPENDENT UE5 WORK // 03',
       metric: 'DUO DEVELOPMENT',
       type: 'unreal',
-      imageUrl: '/src/assets/images/regenerated_image_1781884110396.png',
+      imageUrl: arImage3,
       color: 'from-blue-600 to-indigo-700'
     }
   }
@@ -64,7 +80,7 @@ export const crossIndustryProjects: ProjectItem[] = [
       subtitle: 'VOLUMETRIC ATMOSPHERE & SCALE',
       metric: '4K UE5',
       type: 'unreal',
-      imageUrl: '/src/assets/images/regenerated_image_1781877178618.png',
+      imageUrl: crossImage1,
       color: 'from-blue-500 to-indigo-600',
     }
   },
@@ -80,7 +96,7 @@ export const crossIndustryProjects: ProjectItem[] = [
       subtitle: 'SCENE SCALE & INTUITIVE LIGHTING',
       metric: 'LUMEN',
       type: 'unreal',
-      imageUrl: '/src/assets/images/regenerated_image_1781877182250.png',
+      imageUrl: crossImage2,
       color: 'from-cyan-400 to-[#FF9EC6]',
     }
   },
@@ -96,7 +112,7 @@ export const crossIndustryProjects: ProjectItem[] = [
       subtitle: '2026 JUNIOR SPRING WORK',
       metric: 'UE5 RUNTIME',
       type: 'unreal',
-      imageUrl: '/src/assets/images/regenerated_image_1781877327288.png',
+      imageUrl: crossImage3,
       color: 'from-[#FF9EC6] to-pink-600',
     }
   }
@@ -121,7 +137,7 @@ export const categorySwitcherData: Record<string, ProjectItem[]> = {
         subtitle: 'EMOTION BALL COLLECTED // 04',
         metric: 'AR GAMEPLAY',
         type: 'ar-game',
-        imageUrl: '/src/assets/images/regenerated_image_1781966022640.png',
+        imageUrl: arInteractImage,
         color: 'from-amber-400 to-orange-500'
       }
     }
@@ -211,28 +227,28 @@ export const passionItems: PassionItem[] = [
     id: 'pass-1',
     title: 'IPad创意人物头像创作',
     category: 'CREATIVE SKETCHES // 01',
-    imageUrl: '/src/assets/images/regenerated_image_1781886019594.jpg',
+    imageUrl: passionImage1,
     aspectRatio: 'aspect-square'
   },
   {
     id: 'pass-2',
     title: '课余温润写生与光理塑造',
     category: 'LIGHT & STYLE ILLUSTRATIONS // 02',
-    imageUrl: '/src/assets/images/regenerated_image_1781886023315.jpg',
+    imageUrl: passionImage2,
     aspectRatio: 'aspect-[3/4]'
   },
   {
     id: 'pass-3',
     title: '贯穿大学生活的视觉记录',
     category: 'IPAD DIGITAL PAINTINGS // 03',
-    imageUrl: '/src/assets/images/regenerated_image_1781886027971.jpg',
+    imageUrl: passionImage3,
     aspectRatio: 'aspect-[4/3]'
   },
   {
     id: 'pass-4',
     title: '色彩重构与灵魂刻画',
     category: 'PORTRAIT & CHARACTER DESIGN // 04',
-    imageUrl: '/src/assets/images/regenerated_image_1781886033377.jpg',
+    imageUrl: passionImage4,
     aspectRatio: 'aspect-square'
   }
 ];
