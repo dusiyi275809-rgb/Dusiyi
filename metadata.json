@@ -1,0 +1,6 @@
+{
+  "name": "Webflow JS Course Landing Page",
+  "description": "A high-end modern 3D interactive landing page for a Webflow Javascript course featuring smooth parallax, 3D Cube animations, and elegant typography.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
